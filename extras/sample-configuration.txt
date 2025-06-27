@@ -1,0 +1,49 @@
+WHMCS Woza M-pesa Gateway - Sample Configuration
+===============================================
+
+Gateway Settings (WHMCS Admin Panel):
+====================================
+
+Display Name: Woza M-pesa
+Consumer Key: [Your Safaricom Consumer Key]
+Consumer Secret: [Your Safaricom Consumer Secret]
+Business Shortcode: [Your Paybill Number]
+Passkey: [Your Safaricom Passkey]
+Environment: sandbox (for testing) or production
+Auto-redirect: on
+Debug Mode: off (enable only for troubleshooting)
+
+Safaricom Developer Portal Settings:
+===================================
+
+C2B Confirmation URL: https://yourdomain.com/modules/gateways/woza/callback/woza.php
+C2B Validation URL: https://yourdomain.com/modules/gateways/woza/callback/woza.php
+STK Push Callback URL: https://yourdomain.com/modules/gateways/woza/callback/woza.php
+
+Test Credentials (Sandbox):
+==========================
+
+Business Shortcode: 174379
+Consumer Key: [Get from Safaricom Developer Portal]
+Consumer Secret: [Get from Safaricom Developer Portal]
+Passkey: [Get from Safaricom Developer Portal]
+Test Phone: 254708374149
+Test PIN: 1234
+
+Production Setup:
+================
+
+1. Apply for M-pesa Paybill account
+2. Get production credentials from Safaricom
+3. Update gateway configuration
+4. Test with small amounts first
+5. Monitor logs for any issues
+
+Security Notes:
+==============
+
+- Always use HTTPS in production
+- Keep API credentials secure
+- Monitor transaction logs regularly
+- Set up proper file permissions
+- Regular backups of transaction data

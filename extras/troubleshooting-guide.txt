@@ -1,0 +1,79 @@
+WHMCS Woza M-pesa Gateway - Troubleshooting Guide
+================================================
+
+Common Issues and Solutions:
+===========================
+
+1. Gateway Not Appearing in WHMCS
+   - Check file permissions (644 for PHP files)
+   - Verify woza.php is in modules/gateways/
+   - Check PHP error logs for syntax errors
+   - Ensure WHMCS version compatibility (7.0+)
+
+2. STK Push Not Received
+   - Verify phone number format (254XXXXXXXXX)
+   - Check Safaricom API credentials
+   - Ensure environment setting is correct
+   - Test with known working phone number
+
+3. Callback Not Working
+   - Verify callback URL is publicly accessible
+   - Check SSL certificate validity
+   - Test callback URL with curl:
+     curl -X POST https://yourdomain.com/modules/gateways/woza/callback/woza.php
+   - Check server logs for incoming requests
+
+4. Payment Not Detected (Auto-Detection)
+   - Verify C2B URLs are registered with Safaricom
+   - Check if payment amount matches invoice
+   - Review transaction logs for processing errors
+   - Ensure customer used correct paybill number
+
+5. Database Errors
+   - Check MySQL connection
+   - Verify WHMCS database user has proper permissions
+   - Check if required tables were created
+   - Review WHMCS error logs
+
+Debug Steps:
+===========
+
+1. Enable Debug Mode
+   - Set 'Debug Mode' to 'on' in gateway settings
+   - Check debug logs in WHMCS logs directory
+
+2. Check File Permissions
+   - Gateway files: 644
+   - Directories: 755
+   - Callback files: 644
+
+3. Test API Connectivity
+   - Use Safaricom API testing tools
+   - Verify outbound HTTPS connectivity
+   - Check firewall settings
+
+4. Monitor Logs
+   - WHMCS activity log
+   - Server error logs
+   - Gateway debug logs
+   - Safaricom callback logs
+
+Getting Help:
+============
+
+If you need additional support:
+
+1. Check documentation in documentation/ folder
+2. Review this troubleshooting guide
+3. Check WHMCS and server error logs
+4. Contact support with:
+   - WHMCS version
+   - PHP version
+   - Error messages
+   - Steps to reproduce issue
+   - Debug logs (if available)
+
+Support Channels:
+- Email: [Your Support Email]
+- Documentation: [Your Documentation URL]
+- Support Portal: [Your Support Portal]

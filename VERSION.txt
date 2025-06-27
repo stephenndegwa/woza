@@ -1,0 +1,47 @@
+WHMCS Woza M-pesa Gateway
+========================
+
+Version: 2.1.0
+Release Date: 2025-06-27
+Package: whmcs-woza-mpesa-module-v2.1.0-2025-06-27
+
+Files Included:
+- modules/gateways/woza.php (Main gateway file)
+- modules/gateways/woza/callback/woza.php (Callback handler)
+- woza/confirmation.php (Payment confirmation handler)
+- woza/validation.php (Payment validation handler)
+- woza/register_urls.php (URL registration script)
+- payment.php (Enhanced payment page)
+- stkpush.php (STK Push handler)
+- check-status.php (Payment status checker)
+- install.sh (Installation helper)
+- uninstall.sh (Uninstall helper)
+- documentation/ (Complete documentation)
+
+System Requirements:
+- WHMCS 7.0+
+- PHP 7.4+
+- MySQL 5.7+
+- SSL Certificate (for production)
+- cURL extension
+
+Installation:
+1. Extract this package to your WHMCS root directory
+2. Run: bash install.sh
+3. Activate gateway in WHMCS admin panel
+4. Configure M-pesa API credentials
+5. Set callback URL: https://yourdomain.com/modules/gateways/woza/callback/woza.php
+
+Documentation:
+- README.md - Main documentation
+- INSTALLATION_GUIDE.md - Detailed installation guide
+- FEATURES.md - Complete feature overview
+- PRICING.md - Licensing information
+- CHANGELOG.md - Version history
+
+Support:
+- Email: [Your Support Email]
+- Documentation: [Your Documentation URL]
+- Website: [Your Website URL]
+
+© 2024 Woza M-pesa Gateway. All rights reserved.

@@ -1,0 +1,31 @@
+WHMCS Woza M-pesa Gateway - Commercial License
+==============================================
+
+This software is licensed for commercial use. By purchasing and using this
+software, you agree to the following terms:
+
+PERMITTED USES:
+- Use on domains/servers you own or control
+- Customize and modify the source code for your needs
+- Remove or modify branding (white-label rights)
+- Use for client projects (with appropriate license)
+
+RESTRICTIONS:
+- May not redistribute or resell without proper license
+- May not share license keys or installation files
+- Must comply with all applicable laws and regulations
+- Must not reverse engineer or attempt to extract algorithms
+
+SUPPORT & UPDATES:
+- Email support included for 12 months from purchase
+- Free updates included for 12 months from purchase
+- Extended support and updates available for purchase
+
+DISCLAIMER:
+This software is provided "as is" without warranty of any kind. The authors
+shall not be liable for any damages arising from the use of this software.
+
+For full license terms and conditions, visit:
+[Your License URL]
+
+© 2024 Woza M-pesa Gateway. All rights reserved.
